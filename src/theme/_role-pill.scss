@@ -1,0 +1,25 @@
+// _role-pill.scss
+//
+// This file overrides the role pill background so that it uses the custom property
+// --role-color. If no value is provided, the background falls back to blue.
+// Note: CSS alone cannot extract the inline style of the child element,
+// so you must set --role-color on the role pill via HTML or another method.
+// Without that, every role pill will simply use the fallback blue.
+
+.role_dfa8b6.pill_dfa8b6 {
+  background-color: var(--role-color, blue) !important;
+  position: relative;
+  padding-left: 28px;
+  border: none;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569,
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+  display: none !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleName_dfa8b6 {
+  position: relative;
+  z-index: 1;
+  color: var(--text-normal) !important;
+}

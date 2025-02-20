@@ -1208,9 +1208,12 @@
   background-color: var(--background-primary);
 }
 
+[class^=roleRemoveIcon_] {
+  left: 15px;
+}
+
 .role_dfa8b6.pill_dfa8b6 {
   position: relative;
-  /* Use the custom property --role-color if defined, otherwise fallback to blue */
   background: none;
   border: none;
   padding-left: 28px;
@@ -1222,28 +1225,26 @@
 
 .role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   margin: 0 !important;
 }
 
 .role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
   margin: 6px 8px;
-  /* Hide the original dot since its color is now on the pill */
-  display: none !important;
 }
 
 .role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
   content: "";
-  display: none;
+  display: block;
   position: absolute;
   background-color: inherit;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   border-radius: var(--radius-xs);
   filter: brightness(1.1);
   opacity: 0.25;

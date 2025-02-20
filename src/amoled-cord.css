@@ -1207,3 +1207,21 @@
 :is(.theme-dark, .theme-midnight) .sidebar_c48ade .panels_c48ade .container__37e49 {
   background-color: var(--background-primary);
 }
+
+.role_dfa8b6.pill_dfa8b6 {
+  background-color: var(--role-color, blue) !important;
+  position: relative;
+  padding-left: 28px;
+  border: none;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569,
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+  display: none !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleName_dfa8b6 {
+  position: relative;
+  z-index: 1;
+  color: var(--text-normal) !important;
+}
